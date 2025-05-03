@@ -1,153 +1,224 @@
-<!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Multiverse by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letters to My Girlfriend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #570b0b;
+      padding: 2rem;
+      text-align: center;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
 
-				<!-- Header -->
-					<!-- <header id="header">
-						<h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
-							</ul>
-						</nav>
-					</header> -->
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/paper-48288.png" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<!-- <article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article> -->
-					</div>
+	.gallery a {
+      	text-decoration: none;
+  		color: inherit;
+  		display: inline-block;
+	}
+	
 
-				<!-- Footer -->
-					<!-- <footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-							<div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="field half">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-											<div class="field">
-												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div>
-						</div>
-					</footer> -->
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
 
-			</div>
+    .modal-content {
+      background: white;
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      border-radius: 10px;
+      position: relative;
+      text-align: left;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-	</body>
+    .letter-text {
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cartas para Ines</h1>
+
+  <div class="gallery">
+    <a href="#" class="open-letter" data-letter="Hola cariño, no se ni como escribir una carta. Hace pechá (means a lot in Andalusian, en Madrid they use mazo. For example hace pechá calor) que no escribo una carta y no se ni por donde empezar así que simplemente voy a improvisar. No esperes ningún tipo de metáfora o frases complejas con poesía como tú, simplemente voy a escribir lo que me salga del nabo(Im gonna do whatever i want to do -> voy a hacer lo que me salga del nabo/de la polla/del coño)
+
+
+Hola que tal hehe. He decidido hacerlo en español porque siento que me noto más suelto (I feel more free). Siempre he pensado que las cosas pasan por alguna razón. Si el día que nos conocimos hubieses decidido no venir al predrink probablemente ahora mismo no estaríamos juntos. Cada decisión que hemos tomado en nuestra vida he llevado a que tu y yo nos conociéramos. Siempre doy gracias a dios por tener salud en mi familia y lo que tengo en la vida pero ahora siempre le doy las gracias por haberte conocido. Cada vez que voy a la mezquita siempre pienso en ti y pido buena fortuna en tener un futuro juntos.
+		
+				
+Se que parece que al haber tenido otras relaciones antes sepa más sobre relaciones pero sinceramente sigo aprendiendo todos los días. Es cierto que soy mucho mejor novio que cuando tenía 16-20 años porque en esa época era un desastre pero con experiencia he aprendido a ser mucha mejor persona y empatizar más con la gente. Aún así, siento que todavía no soy lo suficiente buen novio para hacerte feliz. Te trato muy bien, siempre que puedo te compro lo que necesites o te traigo lo que necesites. Te consuelo como puedo y te quiero de la mejor manera que se pero siento que tengo muchísimo que mejorar. Por ejemplo el tema de las flores, de verdad que hasta que no me lo dijiste no me di cuenta. Creo que es una mezcla entre tener mala memoria y que no puse suficiente atención en escuchar lo que decías. A partir de ahora te voy a intentar ser más atento con lo que pides y lo que necesitas y si alguna vez me tienes que decir quiero esto o necesito esto simplemente dilo. No porque me digas que necesitas algo significa que no te quiero, no te escucho o no te presto atención, simplemente soy un poco tonto.
+		
+				
+No se ni cuanto más tengo que escribir o si he escrito lo suficiente no soy experto en esto. Creo que la distancia para mi no es un problema. Siempre he pensado que por la distancia mi relación anterior no funcionó, pero sinceramente algo dentro de mi pensaba que la relación no tendría futuro. Cuando la vi el otro día en cada de Oliver y después de escucharle hablar me acuerdo el por qué decidí cortar en su momento. Contigo siento una conexión que no había sentido antes. Es increíble la forma en la que somos tan similares en tantas cosas, tenemos gustos muy similares y lo más importante, un humor casi idéntico. Lo voy a decir una vez en mi vida así que guarda este mensaje: sí pienso que eres graciosa. Yo no podría estar con una persona que aunque esté buena no me haga reír y contigo me río todos los días (sobretodo me río de ti pero bueno).
+		
+				
+Siento mucho haber tardado tanto en enviarte una “carta” pero es que no se que decir. Seguramente para ti ha sido muy poco texto pero no había escrito tanto desde Bachillerato. Intentaré no tardar mucho en escribirte otra (sí voy a tardar). Cada día que pasa me enamoró cada vez más de ti, no podría haber elegido mejor pareja para pasar el resto de los días. Te amo mi amor.
+		
+				
+Niloy.">
+      <img src="images/thumbs/01.jpg" alt="Letter 1">
+    </a>
+    <a href="#" class="open-letter" data-letter="Hola cariño, que tal hehe. I actually don’t know what to say this is the second time I write to somebody I’ve never written this much to anyone but since you like them I will make an effort.
+
+
+I was thinking that it’s not that terrible that we are separated right now. It’s making us talk more and communicate more. Also when we see each other it will be an amazing feeling because we missed each other so much. 
+	
+		
+I just realised that I didn’t write in Spanish ahahahah well too late. Btw I also like a lot teaching you Spanish, you are really intelligent and you remember everything really quick. You already have a good level but I will make you speak it fluently, we have a whole life together to get better at it.
+	
+	
+Talking about language I will learn French properly in the future. Right now I’m trying to finish the course as fast as I can and learning a lot. I don’t want to work in a shitty job. I can’t be with you and have a future together with a good family and a house and kids and not have a decent job. Every thing I do right now is for our future together
+	
+		
+Have a good night my love, sleep well and have nice dreams, this letter was a bit short I will make sure to write more next time.
+	
+		
+Te amo mi amor	
+Niloy.">
+      <img src="images/thumbs/02.jpg" alt="Letter 2">
+    </a>
+    <a href="#" class="open-letter" data-letter="Hola cariño hehe. Como estás? Te duele la pierna? Espero que estés mejor. Hace mucho que no te escribo perdona estaba ocupado (no). 
+
+
+Nueve meses vaya locura, parece como si fuera ayer cuando te conocí el common room de Wardley. Contigo el tiempo pasa rápido y lento al mismo tiempo. Cuando estamos juntos siento que el tiempo se para y solo somos nosotros dos pero a la vez parpadeo una vez y pasa una semana entera (no entiendo nada).
+	
+		
+Las veces que te digo que te amo o te echo de menos no representan todo lo que te amo y te echo de menos. Llegaste de repente e hiciste mi vida mucho más feliz. Mis días siempre son monótonos, aburridos y repetitivos pero aún así me levanto con una sonrisa porque se que por la noche nos vamos a llamar. 
+	
+		
+Nunca llegue a pensar que una relación a distancia podría ser tan llevadera(it was this doable). Tenerte a mi lado hace que mi vida sea más divertida. Contigo estaría dispuesto a tener una distant relationship de hasta 5 años si hiciera falta (espero que no). 
+	
+	
+Estar contigo es lo que más feliz me hace en la vida, es muy fácil tener alguien a tu lado a la que amas tanto, entiendes tanto y te conoce tan bien (a veces estás loca y lloras pero me he acostumbrado a eso y nunca voy a dejarte pinky promise). La conexión que tengo contigo no la he tenido nunca con nadie, eres mi media naranja (a way in Spanish to say you are my other half). Nos complementamos el uno al otro perfectamente y creo que de eso va tener una relación. 
+	
+	
+No te preocupes mucho por lo de estudiar Química, si Dios lo ha querido así será por algo. Da igual como lo intente yo se que vamos a acabar juntos así que no pienses mucho en ello. Hasta el Lunes no sabes la respuesta pero verás que todo va a estar bien.
+	
+		
+Me has hecho muy feliz en estos nueve meses y espero que lo sigas haciendo el resto de nuestras vidas, porque eres la única persona con la que quiero estar y terminar mi vida. Soy todo tuyo cariño mio, te amo muchísimo.
+	
+		
+Niloy.">
+      <img src="images/thumbs/03.jpg" alt="Letter 3">
+    </a>
+	<a href="#" class="open-letter" data-letter="Hola cariño :)
+
+
+I am really sorry for the delay. If I am completely honest I subconsciously probably didn’t write you one yet because I am not great with words. Voy a cambiar al español a ver si es más fácil. Siento mucho haber tardado tanto, se lo importante que es para ti que te escriba y me siento fatal de haberte hecho daño por esto.
+	
+		
+Te he dicho que te voy a escribir una carta al mes y lo voy a hacer pero nunca se que decir y me pongo a improvisar. Probablemente me repita en muchas cosas que te voy a decir porque se suma a que no me acuerdo muy bien de las cosas.
+	
+		
+Voy a hablarte un poco del viaje, creo que aunque estuviéramos enfadados durante el viaje y aunque no me lo haya pasado lo mejor posible, creo que sirvió para ver cómo afrontar situaciones similares en el futuro. 
+	
+	
+Estamos creando un camino juntos y cada paso que damos son historias y momentos que vivimos. No es un camino fácil, a veces hay baches y otras veces hay que subir cuestas hacia arriba, pero lo importante es hacerlo juntos. Cada pequeña pelea o conversaciones que tenemos nos hace mejor pareja porque aprendemos de ella y eso es lo importante.
+	
+	
+Nunca he estado tan seguro sobre la pareja que he elegido, eres lo mejor que me ha pasado en la vida y voy a cuidarte como la última flor del planeta. Te amo muchísimo cariño mío, amor de mi vida. Siento mucho haber tardado tanto. 
+	
+		
+Tu cariño">
+		<img src="images/thumbs/02.jpg" alt="Letter 4">
+	  </a>
+	  <a href="#" class="open-letter" data-letter="Hola cariño, your monthly note here. I honestly don’t know how I’m gonna keep up with this for the rest of our lives since I never know what to say and I’m running out of ideas.
+
+
+How are you preciosa. In couple hours we gonna do 11 months together. I feel like we have been in 11 months for like 3 months now. After that one year. I swear to god my perception of time is fucked I can’t believe it’s been a year already. I feel like I know for some time but not a year it’s kinda crazy.
+	  
+	  	  
+You just called me I’m watching you. You went to get pastries and now you going back home. So funny to write this while I see you. Cariño mío you look so beautiful. I will never get bored of looking at you. Every feature in your face it’s perfect. I could stare at you forever and contemplate the every detail. I would kiss every part (of your face) right now.
+	  
+	  	  
+We are talking about One Piece. It’s the only thing I’m glad for that you left. We would have never finished it if you were here because there are so many things we have to watch together still. I’m so happy to watch one piece with you. It’s the best story ever and I forgot so many things and it’s so nice to relive all those moments with you preciosa.
+	  
+	   
+After you comeback there are so many things I want to try (no sexual (also)). Can’t wait to travel and visit places and have new experiences with you mon coeur. You are the only reason I wake up happy everyday, because I know that I will have you there with me everyday to hang out and live our life.
+	  
+	  	  
+Te amo muchísimo cariño mío, I feel like words are not enough to express my love. I hope these notes makes you happy. I will try my best to always be kind and to you and make your life easier. I miss you more everyday I wish you were here. Te amo preciosa.
+	  
+	  	  
+Niloy.">
+		<img src="images/thumbs/03.jpg" alt="Letter 5">
+	  </a>
+	  
+  </div>
+
+  <!-- Modal -->
+  <div id="letterModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="letter-text" id="letterText">
+        <!-- Letter content will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    const modal = document.getElementById('letterModal');
+    const modalText = document.getElementById('letterText');
+    const closeBtn = document.querySelector('.close-button');
+
+    // Click on image
+    document.querySelectorAll('.open-letter').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const letter = this.getAttribute('data-letter');
+        modalText.textContent = letter;
+        modal.style.display = 'flex';
+      });
+    });
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Click outside modal to close
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
 </html>
