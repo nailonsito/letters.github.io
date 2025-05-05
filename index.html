@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Letters to My Girlfriend</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: sans-serif;
@@ -29,6 +30,11 @@
   		color: inherit;
   		display: inline-block;
 	}
+
+  body, h1, h2, h3, p, .modal-content {
+  font-family: 'Dancing Script', cursive;
+  }
+  
 	
 
     /* Modal styles */
@@ -43,8 +49,8 @@
       align-items: center;
     }
 
-    .modal-content {
-      background: white;
+    /* .modal-content { */
+      /* background: rgb(223, 171, 111);
       padding: 20px;
       width: 90%;
       max-width: 600px;
@@ -53,7 +59,32 @@
       border-radius: 10px;
       position: relative;
       text-align: left;
-    }
+      background-image: url('assets/images/light-paper-fibers.png');
+      background-size: cover;
+      background-blend-mode: multiply;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      border: 1px solid #ccb97e; */
+
+    /* } */
+
+    .modal-content {
+      background-color: #fdf6e3;
+      background-image: url('images/notebook.png');
+      background-size: cover;
+      background-blend-mode: multiply;
+      color: #3e2f1c;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      font-family: 'Dancing Script', cursive;
+      border: 1px solid #d6c7a1;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      filter: drop-shadow(3px 5px 10px rgba(0,0,0,0.3));
+      transform: rotate(-0.5deg);
+      border-radius: 16px;
+}
 
     .close-button {
       position: absolute;
@@ -72,7 +103,7 @@
 </head>
 <body>
 
-  <h1>Cartas para Ines</h1>
+  <h1>Cartas para Inès</h1>
 
   <div class="gallery">
     <a href="#" class="open-letter" data-letter="Hola cariño, no se ni como escribir una carta. Hace pechá (means a lot in Andalusian, en Madrid they use mazo. For example hace pechá calor) que no escribo una carta y no se ni por donde empezar así que simplemente voy a improvisar. No esperes ningún tipo de metáfora o frases complejas con poesía como tú, simplemente voy a escribir lo que me salga del nabo(Im gonna do whatever i want to do -> voy a hacer lo que me salga del nabo/de la polla/del coño)
@@ -91,7 +122,7 @@ Siento mucho haber tardado tanto en enviarte una “carta” pero es que no se q
 		
 				
 Niloy.">
-      <img src="images/thumbs/01.jpg" alt="Letter 1">
+      <img src="images/thumbs/dec24.jpeg" alt="Letter 1">
     </a>
     <a href="#" class="open-letter" data-letter="Hola cariño, que tal hehe. I actually don’t know what to say this is the second time I write to somebody I’ve never written this much to anyone but since you like them I will make an effort.
 
@@ -110,7 +141,7 @@ Have a good night my love, sleep well and have nice dreams, this letter was a bi
 		
 Te amo mi amor	
 Niloy.">
-      <img src="images/thumbs/02.jpg" alt="Letter 2">
+      <img src="images/thumbs/jan25.jpeg" alt="Letter 2">
     </a>
     <a href="#" class="open-letter" data-letter="Hola cariño hehe. Como estás? Te duele la pierna? Espero que estés mejor. Hace mucho que no te escribo perdona estaba ocupado (no). 
 
@@ -134,7 +165,7 @@ Me has hecho muy feliz en estos nueve meses y espero que lo sigas haciendo el re
 	
 		
 Niloy.">
-      <img src="images/thumbs/03.jpg" alt="Letter 3">
+      <img src="images/thumbs/feb25.jpeg" alt="Letter 3">
     </a>
 	<a href="#" class="open-letter" data-letter="Hola cariño :)
 
@@ -155,7 +186,7 @@ Nunca he estado tan seguro sobre la pareja que he elegido, eres lo mejor que me 
 	
 		
 Tu cariño">
-		<img src="images/thumbs/02.jpg" alt="Letter 4">
+		<img src="images/thumbs/mar25.jpeg" alt="Letter 4">
 	  </a>
 	  <a href="#" class="open-letter" data-letter="Hola cariño, your monthly note here. I honestly don’t know how I’m gonna keep up with this for the rest of our lives since I never know what to say and I’m running out of ideas.
 
@@ -176,7 +207,7 @@ Te amo muchísimo cariño mío, I feel like words are not enough to express my l
 	  
 	  	  
 Niloy.">
-		<img src="images/thumbs/03.jpg" alt="Letter 5">
+		<img src="images/thumbs/apr25.jpeg" alt="Letter 5">
 	  </a>
 	  
   </div>
@@ -191,11 +222,27 @@ Niloy.">
     </div>
   </div>
 
+  <audio id="clickSound" src="assets/sounds/audio.mp3" preload="auto"></audio>
+
+
   <!-- Script -->
   <script>
     const modal = document.getElementById('letterModal');
     const modalText = document.getElementById('letterText');
     const closeBtn = document.querySelector('.close-button');
+    const clickSound = document.getElementById('clickSound');
+
+    document.querySelectorAll('.open-letter').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const letter = this.getAttribute('data-letter');
+        document.getElementById('letterText').textContent = letter;
+        document.getElementById('letterModal').style.display = 'flex';
+        // Play click sound
+        clickSound.currentTime = 0; // rewind to start
+        clickSound.play();
+      });
+    });
 
     // Click on image
     document.querySelectorAll('.open-letter').forEach(link => {
